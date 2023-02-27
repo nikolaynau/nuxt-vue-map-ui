@@ -21,5 +21,7 @@ jobs:
         run: npm -v
       - name: Install project dependencies
         run: npm ci
+      - name: Nuxt prepare
+        run: npm run dev:prepare
       - name: Run tests
         run: npm test
