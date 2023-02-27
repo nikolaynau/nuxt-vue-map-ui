@@ -34,14 +34,14 @@
     "*.ts": "prettier --write"
   },
   "scripts": {
-    "build": "nuxt-module-build",
+    "build": "npm run dev:prepare && nuxt-module-build",
     "dev": "nuxi dev playground",
     "dev:build": "nuxi build playground",
     "dev:prepare": "nuxt-module-build --stub && nuxi prepare playground",
     "lint": "eslint --fix .",
     "lint:test": "eslint .",
     "format": "prettier --write \"**/*.{ts,vue}\"",
-    "test": "vitest run",
+    "test": "npm run dev:prepare && vitest run",
     "test:watch": "vitest watch",
     "postversion": "npm run push",
     "push": "git push origin master --tags",
