@@ -1,17 +1,21 @@
-import { defineNuxtModule, addPlugin, createResolver } from '@nuxt/kit';
-import { name, version } from '../package.json';
+import { defineNuxtModule } from '@nuxt/kit';
+import { defaults, libraryName } from './config';
+import { resolveComponents, resolveImports, resolveStyles } from './core';
+import type { Options } from './types';
 
-export interface ModuleOptions {}
-
-export default defineNuxtModule<ModuleOptions>({
+export default defineNuxtModule<Partial<Options>>({
   meta: {
-    name,
-    version,
+    name: libraryName,
     configKey: 'vueMap'
   },
-  defaults: {},
-  setup(options, nuxt) {
-    const resolver = createResolver(import.meta.url);
-    addPlugin(resolver.resolve('./runtime/plugin'));
+  defaults,
+  setup(_options, nuxt) {
+    const options = _options as Options;
+
+    resolveStyles(options);
+    nuxt.options.imports.autoImport !== false &&
+      options.importUseFunctions &&
+      resolveImports(options);
+    nuxt.options.components !== false && resolveComponents(options);
   }
 });

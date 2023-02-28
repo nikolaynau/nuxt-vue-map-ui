@@ -7,6 +7,7 @@
 - Automatically import components on demand.
 - Automatically import library styles.
 - Automatically import leaflet styles.
+- Automatically import of useMap, useLayer and other methods.
 
 ## Installation
 
@@ -34,6 +35,16 @@ export default defineNuxtConfig({
 ```
 
 Reference [documentation](https://nikolaynau.github.io/vue-map-ui-docs/) and [playground](./playground/app.vue) use.
+
+## Options
+
+## Type definitions
+
+If you use typescript, please add the type definitions fot `leaflet` library.
+
+```bash
+$ npm install -D @types/leaflet
+```
 
 ## License
 
