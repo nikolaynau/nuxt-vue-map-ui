@@ -38,11 +38,6 @@ Reference [documentation](https://nikolaynau.github.io/vue-map-ui-docs/) and [pl
 
 ## Options
 
-### importsEnabled
-
-- Type: `boolean`
-- Default: `false`
-
 ### leafletStyles
 
 - Type: `boolean`
@@ -71,6 +66,11 @@ e.g. `['VMap']`
 - Type: `array`
 
 If you wish to add automatically import content from Vue Map UI, you can add it here.
+
+### importsEnabled
+
+- Type: `boolean`
+- Default: `false`
 
 ## Type definitions
 
