@@ -3,10 +3,10 @@ export type PresetImport = string | [name: string, as?: string, from?: string];
 export interface Options {
   components: PresetImport[];
   imports: PresetImport[];
-  importUseFunctions: boolean;
-  addLeafletStyle: boolean;
-  addNormalizeStyle: boolean;
-  addLibraryStyle: boolean;
+  importsEnabled: boolean;
+  leafletStyles: boolean;
+  normalizeStyles: boolean;
+  libraryStyles: boolean;
 }
 
 declare module '@nuxt/schema' {

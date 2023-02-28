@@ -7,15 +7,15 @@ export function resolveStyles(config: Options) {
   const nuxt = useNuxt();
   const enabled = isArray(nuxt.options.css);
 
-  if (config.addLeafletStyle) {
+  if (config.leafletStyles) {
     enabled && nuxt.options.css.push('leaflet/dist/leaflet.css');
   }
 
-  if (config.addNormalizeStyle) {
+  if (config.normalizeStyles) {
     enabled && nuxt.options.css.push(`${libraryName}/dist/normalize.css`);
   }
 
-  if (config.addLibraryStyle) {
+  if (config.libraryStyles) {
     enabled && nuxt.options.css.push(`${libraryName}/dist/style.css`);
   }
 }

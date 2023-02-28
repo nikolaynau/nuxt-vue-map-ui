@@ -9,8 +9,8 @@ const allImports: PresetImport[] = ['useMap', 'useLayer'];
 export const defaults: Options = {
   components: allComponents,
   imports: allImports,
-  importUseFunctions: false,
-  addLeafletStyle: true,
-  addLibraryStyle: true,
-  addNormalizeStyle: true
+  importsEnabled: false,
+  leafletStyles: true,
+  libraryStyles: true,
+  normalizeStyles: true
 };
