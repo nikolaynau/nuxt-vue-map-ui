@@ -44,28 +44,28 @@ Reference [Nuxt documentation](https://nuxt.com/docs/guide/directory-structure/c
 - Type: `boolean`
 - Default: `true`
 
-Determine if `vue-map-ui` composables should be automatically imported and accessible within your nuxt app.
+Determine if vue-map-ui composables should be automatically imported and accessible within your nuxt app.
 
 ### leafletStyles
 
 - Type: `boolean`
 - Default: `true`
 
-Specify if add `leaflet` css styles.
+Specify if add leaflet styles.
 
 ### normalizeStyles
 
 - Type: `boolean`
 - Default: `true`
 
-Specify if add `tailwind` base css styles.
+Specify if add tailwind base styles.
 
 ### libraryStyles
 
 - Type: `boolean`
 - Default: `true`
 
-Specify if add `vue-map-ui` css styles.
+Specify if add vue-map-ui styles.
 
 ### components
 
