@@ -1,17 +1,17 @@
 import { defineNuxtModule } from '@nuxt/kit';
-import { defaults, libraryName } from './config';
+import { defaults } from './config';
 import { resolveComponents, resolveImports, resolveStyles } from './core';
-import type { Options } from './types';
+import type { ModuleOptions } from './types';
+import { name, version } from '../package.json';
 
-export default defineNuxtModule<Partial<Options>>({
+export default defineNuxtModule<ModuleOptions>({
   meta: {
-    name: libraryName,
+    name,
+    version,
     configKey: 'vueMap'
   },
   defaults,
-  setup(_options, nuxt) {
-    const options = _options as Options;
-
+  setup(options, nuxt) {
     resolveStyles(options);
     nuxt.options.imports.autoImport !== false &&
       options.autoImports &&

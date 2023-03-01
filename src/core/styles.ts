@@ -1,9 +1,9 @@
 import { useNuxt } from '@nuxt/kit';
 import { libraryName } from '../config';
-import type { Options } from '../types';
+import type { ModuleOptions } from '../types';
 import { isArray } from '../utils';
 
-export function resolveStyles(config: Options) {
+export function resolveStyles(config: ModuleOptions) {
   const nuxt = useNuxt();
   const enabled = isArray(nuxt.options.css);
 

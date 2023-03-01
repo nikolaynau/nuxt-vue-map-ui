@@ -1,19 +1,10 @@
 export type PresetImport = string | [name: string, as?: string, from?: string];
 
-export interface Options {
+export interface ModuleOptions {
   components: PresetImport[];
   imports: PresetImport[];
   autoImports: boolean;
   leafletStyles: boolean;
   normalizeStyles: boolean;
   libraryStyles: boolean;
-}
-
-declare module '@nuxt/schema' {
-  interface NuxtConfig {
-    vueMap?: Partial<Options>;
-  }
-  interface NuxtOptions {
-    vueMap?: Partial<Options>;
-  }
 }
