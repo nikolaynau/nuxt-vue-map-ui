@@ -3,7 +3,7 @@ export type PresetImport = string | [name: string, as?: string, from?: string];
 export interface Options {
   components: PresetImport[];
   imports: PresetImport[];
-  importsEnabled: boolean;
+  autoImports: boolean;
   leafletStyles: boolean;
   normalizeStyles: boolean;
   libraryStyles: boolean;

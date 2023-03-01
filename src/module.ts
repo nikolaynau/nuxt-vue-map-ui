@@ -14,7 +14,7 @@ export default defineNuxtModule<Partial<Options>>({
 
     resolveStyles(options);
     nuxt.options.imports.autoImport !== false &&
-      options.importsEnabled &&
+      options.autoImports &&
       resolveImports(options);
     nuxt.options.components !== false && resolveComponents(options);
   }
