@@ -29,9 +29,11 @@ export default defineNuxtConfig({
 
 ```vue
 <template>
-  <v-map></v-map>
-  <VMap></VMap>
-  <LazyVMap></LazyVMap>
+  <ClientOnly>
+    <v-map></v-map>
+    <VMap></VMap>
+    <LazyVMap></LazyVMap>
+  </ClientOnly>
 </template>
 ```
 
