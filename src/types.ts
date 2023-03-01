@@ -8,3 +8,12 @@ export interface ModuleOptions {
   normalizeStyles: boolean;
   libraryStyles: boolean;
 }
+
+declare module '@nuxt/schema' {
+  interface NuxtConfig {
+    ['vueMap']?: Partial<ModuleOptions>;
+  }
+  interface NuxtOptions {
+    ['vueMap']?: ModuleOptions;
+  }
+}
