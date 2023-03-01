@@ -6,8 +6,9 @@
 
 - Automatically import components on demand.
 - Automatically import of useMap, useLayer and other methods.
-- Automatically add library styles.
+- Automatically add tailwind base styles.
 - Automatically add leaflet styles.
+- Automatically add library styles.
 
 ## Installation
 
@@ -34,24 +35,37 @@ export default defineNuxtConfig({
 </template>
 ```
 
-Reference [documentation](https://nikolaynau.github.io/vue-map-ui-docs/) and [playground](./playground/app.vue) use.
+Reference [Nuxt documentation](https://nuxt.com/docs/guide/directory-structure/components) and [playground](./playground/app.vue) use.
 
 ## Options
+
+### autoImports
+
+- Type: `boolean`
+- Default: `true`
+
+Determine if `vue-map-ui` composables should be automatically imported and accessible within your nuxt app.
 
 ### leafletStyles
 
 - Type: `boolean`
 - Default: `true`
 
+Specify if add `leaflet` css styles.
+
 ### normalizeStyles
 
 - Type: `boolean`
 - Default: `true`
 
+Specify if add `tailwind` base css styles.
+
 ### libraryStyles
 
 - Type: `boolean`
 - Default: `true`
+
+Specify if add `vue-map-ui` css styles.
 
 ### components
 
@@ -66,11 +80,6 @@ e.g. `['VMap']`
 - Type: `array`
 
 If you wish to add automatically import content from Vue Map UI, you can add it here.
-
-### importsEnabled
-
-- Type: `boolean`
-- Default: `false`
 
 ## Type definitions
 
