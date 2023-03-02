@@ -1,11 +1,21 @@
-import { addComponent } from '@nuxt/kit';
-import { libraryName } from '../config';
+import { addComponent, type Resolver } from '@nuxt/kit';
+import { libraryName, rootComponentName, runtimeDir } from '../config';
 import { toArray } from '../utils';
 import type { ModuleOptions } from '../types';
 
-export function resolveComponents(config: ModuleOptions) {
+export function resolveComponents(config: ModuleOptions, resolver: Resolver) {
   const { components } = config;
   const allComponents = new Set(components);
+
+  addComponent({
+    name: rootComponentName,
+    filePath: resolver.resolve(
+      runtimeDir,
+      'components',
+      'ServerPlaceholder.vue'
+    ),
+    mode: 'server'
+  });
 
   for (const item of allComponents) {
     const [name, alias] = toArray(item);
@@ -13,7 +23,8 @@ export function resolveComponents(config: ModuleOptions) {
     addComponent({
       export: name,
       name: alias || name,
-      filePath: libraryName
+      filePath: libraryName,
+      mode: 'client'
     });
   }
 }
