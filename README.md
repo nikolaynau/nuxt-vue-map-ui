@@ -30,8 +30,7 @@ export default defineNuxtConfig({
 ```vue
 <template>
   <v-map></v-map>
-  <VMap></VMap>
-  <LazyVMap></LazyVMap>
+  <VMap></VMap>  
 </template>
 ```
 
