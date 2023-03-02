@@ -30,11 +30,11 @@ export default defineNuxtConfig({
 ```vue
 <template>
   <v-map></v-map>
-  <VMap></VMap>  
+  <VMap></VMap>
 </template>
 ```
 
-Reference [Nuxt documentation](https://nuxt.com/docs/guide/directory-structure/components) and [playground](./playground/app.vue) use.
+Read [playground](./playground/app.vue) for more examples.
 
 ## Options
 
