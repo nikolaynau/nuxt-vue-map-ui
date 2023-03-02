@@ -1,10 +1,10 @@
-import type { ModuleOptions, PresetImport } from './types';
+import type { ModuleOptions } from './types';
 
 export const libraryName = 'vue-map-ui';
 
 const allComponents = ['VMap', 'VMapTileLayer', 'VMapOsmTileLayer'];
 
-const allImports: PresetImport[] = ['useMap', 'useLayer'];
+const allImports: string[] = ['useMap', 'useLayer'];
 
 export const defaults: ModuleOptions = {
   components: allComponents,

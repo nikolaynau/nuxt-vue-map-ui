@@ -4,6 +4,8 @@ import { resolveComponents, resolveImports, resolveStyles } from './core';
 import type { ModuleOptions } from './types';
 import { name, version } from '../package.json';
 
+export { ModuleOptions };
+
 export default defineNuxtModule<ModuleOptions>({
   meta: {
     name,
