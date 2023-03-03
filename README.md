@@ -45,21 +45,21 @@ Read [playground](./playground/app.vue) for more examples.
 
 Determine if vue-map-ui composables should be automatically imported and accessible within your nuxt app.
 
-### leafletStyles
+### leafletStyle
 
 - Type: `boolean`
 - Default: `true`
 
 Specify if add leaflet styles.
 
-### normalizeStyles
+### normalizeStyle
 
 - Type: `boolean`
 - Default: `true`
 
 Specify if add tailwind base styles.
 
-### libraryStyles
+### libraryStyle
 
 - Type: `boolean`
 - Default: `true`

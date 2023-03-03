@@ -10,7 +10,7 @@ export const defaults: ModuleOptions = {
   components: allComponents,
   imports: allImports,
   autoImports: true,
-  leafletStyles: true,
-  libraryStyles: true,
-  normalizeStyles: true
+  leafletStyle: true,
+  libraryStyle: true,
+  normalizeStyle: true
 };

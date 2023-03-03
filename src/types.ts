@@ -2,7 +2,7 @@ export interface ModuleOptions {
   components: string[];
   imports: string[];
   autoImports: boolean;
-  leafletStyles: boolean;
-  normalizeStyles: boolean;
-  libraryStyles: boolean;
+  leafletStyle: boolean;
+  normalizeStyle: boolean;
+  libraryStyle: boolean;
 }
