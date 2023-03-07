@@ -80,14 +80,6 @@ e.g. `['VMap']`
 
 If you wish to add automatically import content from Vue Map UI, you can add it here.
 
-## Type definitions
-
-If you use typescript, please add the type definitions fot `leaflet` library.
-
-```bash
-$ npm install -D @types/leaflet
-```
-
 ## License
 
 Licensed under the [MIT License](./LICENSE).
