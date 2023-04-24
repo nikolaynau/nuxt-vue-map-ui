@@ -5,7 +5,7 @@
 ## Features
 
 - Automatically import components on demand.
-- Automatically import of useMap, useLayer and other methods.
+- Automatically import of useMap and other methods.
 - Automatically add tailwind base styles.
 - Automatically add leaflet styles.
 - Automatically add library styles.
