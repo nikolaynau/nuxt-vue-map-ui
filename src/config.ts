@@ -14,7 +14,7 @@ const allComponents = [
   'VMapArcGisTileLayer',
   'VMapGoogleTileLayer',
   'VMapMapboxTileLayer',
-  'VMapOcmTileLayer',
+  'VMapOpenTransportTileLayer',
   'VMapOsmTileLayer'
 ];
 const allImports: string[] = [
