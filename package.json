@@ -47,25 +47,25 @@
   },
   "peerDependencies": {
     "leaflet": ">=1.9.0",
-    "vue-map-ui": ">=0.0.14",
+    "vue-map-ui": ">=0.0.15",
     "@types/leaflet": ">=1.9.0"
   },
   "dependencies": {
-    "@nuxt/kit": "^3.4.2"
+    "@nuxt/kit": "^3.6.5"
   },
   "devDependencies": {
-    "@commitlint/cli": "^17.6.1",
-    "@commitlint/config-angular": "^17.6.1",
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-angular": "^17.6.7",
     "@nuxt/eslint-config": "^0.1.1",
-    "@nuxt/module-builder": "^0.3.0",
-    "@nuxt/schema": "^3.4.2",
+    "@nuxt/module-builder": "^0.4.0",
+    "@nuxt/schema": "^3.6.5",
     "@types/leaflet": "^1.9.3",
-    "eslint": "^8.39.0",
+    "eslint": "^8.46.0",
     "husky": "^8.0.3",
-    "leaflet": "^1.9.3",
-    "lint-staged": "^13.2.1",
-    "nuxt": "^3.4.2",
-    "prettier": "^2.8.8",
-    "vue-map-ui": "^0.0.14"
+    "leaflet": "^1.9.4",
+    "lint-staged": "^13.2.3",
+    "nuxt": "^3.6.5",
+    "prettier": "^3.0.1",
+    "vue-map-ui": "^0.0.15"
   }
 }
