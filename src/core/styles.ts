@@ -18,4 +18,8 @@ export function resolveStyles(config: ModuleOptions) {
   if (config.libraryStyle) {
     enabled && nuxt.options.css.push(`${libraryName}/dist/style.css`);
   }
+
+  if (config.themeStyle) {
+    enabled && nuxt.options.css.push(`${libraryName}/dist/theme-all.css`);
+  }
 }

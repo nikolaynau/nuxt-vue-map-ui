@@ -3,5 +3,6 @@ export default defineNuxtConfig({
   vueMap: {},
   imports: {
     autoImport: true
-  }
+  },
+  css: ['~/assets/css/main.css']
 });

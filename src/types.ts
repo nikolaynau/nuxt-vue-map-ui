@@ -5,4 +5,5 @@ export interface ModuleOptions {
   leafletStyle: boolean;
   normalizeStyle: boolean;
   libraryStyle: boolean;
+  themeStyle: boolean;
 }
