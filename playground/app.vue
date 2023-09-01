@@ -5,12 +5,16 @@
     <h2>Simple Map</h2>
     <VMap style="height: 200px">
       <VMapOsmTileLayer />
+      <VMapZoomControl />
+      <VMapAttributionControl />
     </VMap>
   </section>
   <section class="section">
     <h2>Use Custom Component</h2>
     <VMap style="height: 200px">
       <VMapOsmTileLayer />
+      <VMapZoomControl />
+      <VMapAttributionControl />
       <SubComponent />
     </VMap>
   </section>
@@ -18,12 +22,16 @@
     <h2>Use Kebab-Case Components</h2>
     <v-map style="height: 200px">
       <v-map-osm-tile-layer />
+      <v-map-zoom-control />
+      <v-map-attribution-control />
     </v-map>
   </section>
   <section class="section">
     <h2>Tile Layer</h2>
     <VMap style="height: 200px">
       <VMapTileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
+      <VMapZoomControl />
+      <VMapAttributionControl />
     </VMap>
   </section>
   <section class="section">
@@ -31,30 +39,36 @@
     <VMap style="height: 200px" :zoom-control="false">
       <VMapOsmTileLayer />
       <VMapZoomControl />
+      <VMapAttributionControl />
     </VMap>
   </section>
   <section class="section">
     <h2>Scale Control</h2>
     <VMap style="height: 200px">
       <VMapOsmTileLayer />
+      <VMapZoomControl />
+      <VMapAttributionControl />
       <VMapScaleControl />
     </VMap>
   </section>
   <section class="section">
     <h2>Layers Control</h2>
-    <VMap style="height: 200px">
+    <VMap style="height: 250px">
       <VMapLayersControl>
         <VMapOsmTileLayer />
         <VMapGoogleTileLayer />
         <VMapArcGisAeroTileLayer />
         <VMapArcGisTileLayer />
       </VMapLayersControl>
+      <VMapZoomControl />
+      <VMapAttributionControl />
     </VMap>
   </section>
   <section class="section">
     <h2>Attribution Control</h2>
     <VMap style="height: 200px" :attribution-control="false">
       <VMapOsmTileLayer attribution="Open Street Map" />
+      <VMapZoomControl />
       <VMapAttributionControl prefix="Leaflet" :attributions="['A', 'B']" />
     </VMap>
   </section>
@@ -62,6 +76,8 @@
     <h2>Custom Map Pane</h2>
     <VMap style="height: 200px">
       <VMapOsmTileLayer />
+      <VMapZoomControl />
+      <VMapAttributionControl />
       <VMapPane name="custom-pane" :z-index="601" />
       <VMapMarker pane="custom-pane" :latlng="[0, 0]" />
     </VMap>
@@ -70,6 +86,8 @@
     <h2>Marker With Default Icon</h2>
     <VMap style="height: 200px">
       <VMapOsmTileLayer />
+      <VMapZoomControl />
+      <VMapAttributionControl />
       <VMapMarker :latlng="[0, 0]" />
       <VMapMarker :latlng="[-15, -15]">
         <VMapDefaultIcon />
@@ -80,6 +98,8 @@
     <h2>Icon</h2>
     <VMap style="height: 200px">
       <VMapOsmTileLayer />
+      <VMapZoomControl />
+      <VMapAttributionControl />
       <VMapMarker :latlng="[0, 0]">
         <VMapIcon
           icon-url="/custom/marker-icon.png"
@@ -93,6 +113,8 @@
     <h2>Div Icon</h2>
     <VMap style="height: 200px">
       <VMapOsmTileLayer />
+      <VMapZoomControl />
+      <VMapAttributionControl />
       <VMapMarker :latlng="[0, 0]">
         <VMapDivIcon
           class="custom-marker-icon"
@@ -108,6 +130,8 @@
     <h2>Pin Icon</h2>
     <VMap style="height: 200px">
       <VMapOsmTileLayer />
+      <VMapZoomControl />
+      <VMapAttributionControl />
       <VMapMarker :latlng="[0, 0]">
         <VMapPinIcon />
       </VMapMarker>
@@ -135,11 +159,13 @@
     <h2>Icon Marker</h2>
     <VMap style="height: 200px">
       <VMapOsmTileLayer />
+      <VMapZoomControl />
+      <VMapAttributionControl />
       <VMapIconMarker
         :latlng="[0, 0]"
-        icon-icon-url="/custom/marker-icon.png"
-        :icon-icon-size="[32, 42]"
-        :icon-icon-anchor="[16, 42]"
+        icon-url="/custom/marker-icon.png"
+        :icon-size="[32, 42]"
+        :icon-anchor="[16, 42]"
       />
     </VMap>
   </section>
@@ -147,11 +173,13 @@
     <h2>Div Marker</h2>
     <VMap style="height: 200px">
       <VMapOsmTileLayer />
+      <VMapZoomControl />
+      <VMapAttributionControl />
       <VMapDivMarker
         :latlng="[0, 0]"
         icon-class="custom-marker-icon"
-        :icon-icon-size="[32, 32]"
-        :icon-icon-anchor="[16, 16]"
+        :icon-size="[32, 32]"
+        :icon-anchor="[16, 16]"
       >
         <div>10</div>
       </VMapDivMarker>
@@ -161,6 +189,8 @@
     <h2>Pin Marker</h2>
     <VMap style="height: 200px">
       <VMapOsmTileLayer />
+      <VMapZoomControl />
+      <VMapAttributionControl />
       <VMapPinMarker
         :latlng="[0, 0]"
         icon-color="#e74645"
