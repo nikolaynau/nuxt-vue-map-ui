@@ -9,6 +9,14 @@ const allComponents = [
   'VMapLayersControl',
   'VMapScaleControl',
   'VMapZoomControl',
+  'VMap',
+  'VMapPane',
+  'VMapArcGisAeroTileLayer',
+  'VMapArcGisTileLayer',
+  'VMapGoogleTileLayer',
+  'VMapMapboxTileLayer',
+  'VMapOpenTransportTileLayer',
+  'VMapOsmTileLayer',
   'VMapDefaultIcon',
   'VMapDivIcon',
   'VMapDivMarker',
@@ -17,15 +25,7 @@ const allComponents = [
   'VMapMarker',
   'VMapPinIcon',
   'VMapPinMarker',
-  'VMapTileLayer',
-  'VMap',
-  'VMapPane',
-  'VMapArcGisAeroTileLayer',
-  'VMapArcGisTileLayer',
-  'VMapGoogleTileLayer',
-  'VMapMapboxTileLayer',
-  'VMapOpenTransportTileLayer',
-  'VMapOsmTileLayer'
+  'VMapTileLayer'
 ];
 
 const allImports: string[] = [
