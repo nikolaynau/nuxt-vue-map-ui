@@ -7,16 +7,9 @@ const allComponents = [
   'VMapAttributionControl',
   'VMapControlPosition',
   'VMapLayersControl',
+  'VMapLocateControl',
   'VMapScaleControl',
   'VMapZoomControl',
-  'VMap',
-  'VMapPane',
-  'VMapArcGisAeroTileLayer',
-  'VMapArcGisTileLayer',
-  'VMapGoogleTileLayer',
-  'VMapMapboxTileLayer',
-  'VMapOpenTransportTileLayer',
-  'VMapOsmTileLayer',
   'VMapDefaultIcon',
   'VMapDivIcon',
   'VMapDivMarker',
@@ -25,7 +18,15 @@ const allComponents = [
   'VMapMarker',
   'VMapPinIcon',
   'VMapPinMarker',
-  'VMapTileLayer'
+  'VMapTileLayer',
+  'VMap',
+  'VMapPane',
+  'VMapArcGisAeroTileLayer',
+  'VMapArcGisTileLayer',
+  'VMapGoogleTileLayer',
+  'VMapMapboxTileLayer',
+  'VMapOpenTransportTileLayer',
+  'VMapOsmTileLayer'
 ];
 
 const allImports: string[] = [
@@ -39,7 +40,8 @@ const allImports: string[] = [
   'useLayersControl',
   'useScaleControl',
   'useZoomControl',
-  'useControlPosition'
+  'useControlPosition',
+  'useLocateControl'
 ];
 
 export const defaults: ModuleOptions = {
