@@ -1,25 +1,32 @@
 import { useNuxt } from '@nuxt/kit';
 import { libraryName } from '../config';
-import type { ModuleOptions } from '../types';
-import { isArray } from '../utils';
+import type { ModuleOptionStyles, ModuleOptions } from '../types';
+import { isArray, isObject } from '../utils';
 
 export function resolveStyles(config: ModuleOptions) {
   const nuxt = useNuxt();
-  const enabled = isArray(nuxt.options.css);
-
-  if (config.leafletStyle) {
-    enabled && nuxt.options.css.push('leaflet/dist/leaflet.css');
+  const enabledCss = isArray(nuxt.options.css);
+  if (!enabledCss) {
+    return;
   }
 
-  if (config.normalizeStyle) {
-    enabled && nuxt.options.css.push(`${libraryName}/dist/normalize.css`);
+  const { styles } = config;
+  const allEnabled = styles === true;
+  const isObj = isObject(styles);
+
+  if (allEnabled || (isObj && (styles as ModuleOptionStyles).leafletStyle)) {
+    nuxt.options.css.push('leaflet/dist/leaflet.css');
   }
 
-  if (config.libraryStyle) {
-    enabled && nuxt.options.css.push(`${libraryName}/dist/style.css`);
+  if (allEnabled || (isObj && (styles as ModuleOptionStyles).normalizeStyle)) {
+    nuxt.options.css.push(`${libraryName}/dist/normalize.css`);
   }
 
-  if (config.themeStyle) {
-    enabled && nuxt.options.css.push(`${libraryName}/dist/theme-all.css`);
+  if (allEnabled || (isObj && (styles as ModuleOptionStyles).libraryStyle)) {
+    nuxt.options.css.push(`${libraryName}/dist/style.css`);
+  }
+
+  if (allEnabled || (isObj && (styles as ModuleOptionStyles).themeStyle)) {
+    nuxt.options.css.push(`${libraryName}/dist/theme-all.css`);
   }
 }

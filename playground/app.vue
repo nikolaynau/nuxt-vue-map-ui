@@ -73,6 +73,15 @@
     </VMap>
   </section>
   <section class="section">
+    <h2>Locate Control</h2>
+    <VMap style="height: 250px">
+      <VMapOsmTileLayer />
+      <VMapZoomControl />
+      <VMapAttributionControl />
+      <VMapLocateControl />
+    </VMap>
+  </section>
+  <section class="section">
     <h2>Custom Map Pane</h2>
     <VMap style="height: 200px">
       <VMapOsmTileLayer />

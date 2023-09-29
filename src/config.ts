@@ -48,8 +48,6 @@ export const defaults: ModuleOptions = {
   components: allComponents,
   imports: allImports,
   autoImports: true,
-  leafletStyle: true,
-  libraryStyle: true,
-  themeStyle: true,
-  normalizeStyle: true
+  styles: true,
+  extensions: false
 };
