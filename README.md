@@ -55,28 +55,24 @@ Read [playground](./playground/app.vue) for more examples.
 #### `leafletStyle`
 
 - Type: `boolean`
-- Default: `true`
 
 > Specify if add leaflet styles.
 
 #### `normalizeStyle`
 
 - Type: `boolean`
-- Default: `true`
 
 > Specify if add tailwind base styles.
 
 #### `libraryStyle`
 
 - Type: `boolean`
-- Default: `true`
 
 > Specify if add vue-map-ui styles.
 
 #### `themeStyle`
 
 - Type: `boolean`
-- Default: `true`
 
 > Specify if add vue-map-ui theme styles.
 
@@ -93,6 +89,19 @@ e.g. `['VMap']`
 - Type: `array`
 
 > If you wish to add automatically import content from Vue Map UI, you can add it here.
+
+### extensions
+
+- Type: `boolean | object`
+- Default: `false`
+
+> Add all library extensions and styles.
+
+#### `locateControl`
+
+- Type: `boolean`
+
+> If `true`, then need to install an extension package [@leaflet-extensions/locatecontrol](https://github.com/nikolaynau/leaflet-extensions/tree/master/packages/leaflet-locatecontrol).
 
 ## License
 
