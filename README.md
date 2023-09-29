@@ -43,34 +43,48 @@ Read [playground](./playground/app.vue) for more examples.
 - Type: `boolean`
 - Default: `true`
 
-Determine if vue-map-ui composables should be automatically imported and accessible within your nuxt app.
+> Determine if vue-map-ui composables should be automatically imported and accessible within your nuxt app.
 
-### leafletStyle
+### styles
+
+- Type: `boolean | object`
+- Default: `true`
+
+> Enables / disables various css styles.
+
+#### `leafletStyle`
 
 - Type: `boolean`
 - Default: `true`
 
-Specify if add leaflet styles.
+> Specify if add leaflet styles.
 
-### normalizeStyle
-
-- Type: `boolean`
-- Default: `true`
-
-Specify if add tailwind base styles.
-
-### libraryStyle
+#### `normalizeStyle`
 
 - Type: `boolean`
 - Default: `true`
 
-Specify if add vue-map-ui styles.
+> Specify if add tailwind base styles.
+
+#### `libraryStyle`
+
+- Type: `boolean`
+- Default: `true`
+
+> Specify if add vue-map-ui styles.
+
+#### `themeStyle`
+
+- Type: `boolean`
+- Default: `true`
+
+> Specify if add vue-map-ui theme styles.
 
 ### components
 
 - Type: `array`
 
-If there are components that are not imported automatically from Vue Map UI, you need to add the component name here.
+> If there are components that are not imported automatically from Vue Map UI, you need to add the component name here.
 
 e.g. `['VMap']`
 
@@ -78,7 +92,7 @@ e.g. `['VMap']`
 
 - Type: `array`
 
-If you wish to add automatically import content from Vue Map UI, you can add it here.
+> If you wish to add automatically import content from Vue Map UI, you can add it here.
 
 ## License
 

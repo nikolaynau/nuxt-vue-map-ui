@@ -11,22 +11,22 @@ export function resolveStyles(config: ModuleOptions) {
   }
 
   const { styles } = config;
-  const allEnabled = styles === true;
+  const allStyles = styles === true;
   const isObj = isObject(styles);
 
-  if (allEnabled || (isObj && (styles as ModuleOptionStyles).leafletStyle)) {
+  if (allStyles || (isObj && (styles as ModuleOptionStyles).leafletStyle)) {
     nuxt.options.css.push('leaflet/dist/leaflet.css');
   }
 
-  if (allEnabled || (isObj && (styles as ModuleOptionStyles).normalizeStyle)) {
+  if (allStyles || (isObj && (styles as ModuleOptionStyles).normalizeStyle)) {
     nuxt.options.css.push(`${libraryName}/dist/normalize.css`);
   }
 
-  if (allEnabled || (isObj && (styles as ModuleOptionStyles).libraryStyle)) {
+  if (allStyles || (isObj && (styles as ModuleOptionStyles).libraryStyle)) {
     nuxt.options.css.push(`${libraryName}/dist/style.css`);
   }
 
-  if (allEnabled || (isObj && (styles as ModuleOptionStyles).themeStyle)) {
+  if (allStyles || (isObj && (styles as ModuleOptionStyles).themeStyle)) {
     nuxt.options.css.push(`${libraryName}/dist/theme-all.css`);
   }
 }
