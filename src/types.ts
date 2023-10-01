@@ -1,7 +1,3 @@
-export interface ModuleOptionExtensions {
-  locateControl?: boolean;
-}
-
 export interface ModuleOptionStyles {
   leafletStyle: boolean;
   normalizeStyle: boolean;
@@ -14,5 +10,4 @@ export interface ModuleOptions {
   imports: string[];
   autoImports: boolean;
   styles: boolean | ModuleOptionStyles;
-  extensions: boolean | ModuleOptionExtensions;
 }

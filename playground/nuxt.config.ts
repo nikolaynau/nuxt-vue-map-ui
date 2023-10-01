@@ -1,8 +1,6 @@
 export default defineNuxtConfig({
   modules: ['../src/module'],
-  vueMap: {
-    extensions: true
-  },
+  vueMap: {},
   imports: {
     autoImport: true
   },

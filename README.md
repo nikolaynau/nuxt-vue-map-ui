@@ -90,19 +90,6 @@ e.g. `['VMap']`
 
 > If you wish to add automatically import content from Vue Map UI, you can add it here.
 
-### extensions
-
-- Type: `boolean | object`
-- Default: `false`
-
-> Add all library extensions and styles.
-
-#### `locateControl`
-
-- Type: `boolean`
-
-> If `true`, then need to install an extension package [@leaflet-extensions/locatecontrol](https://github.com/nikolaynau/leaflet-extensions/tree/master/packages/leaflet-locatecontrol).
-
 ## License
 
 Licensed under the [MIT License](./LICENSE).

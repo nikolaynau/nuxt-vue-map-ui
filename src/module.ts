@@ -3,7 +3,6 @@ import { defaults } from './config';
 import { resolveComponents, resolveImports, resolveStyles } from './core';
 import type { ModuleOptions } from './types';
 import { name, version } from '../package.json';
-import { resolveExtensions } from './core/extensions';
 
 export { ModuleOptions };
 
@@ -24,7 +23,5 @@ export default defineNuxtModule<ModuleOptions>({
       resolveImports(options);
 
     nuxt.options.components !== false && resolveComponents(options, resolver);
-
-    resolveExtensions(options, resolver);
   }
 });

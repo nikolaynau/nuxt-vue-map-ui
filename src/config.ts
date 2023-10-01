@@ -48,6 +48,5 @@ export const defaults: ModuleOptions = {
   components: allComponents,
   imports: allImports,
   autoImports: true,
-  styles: true,
-  extensions: false
+  styles: true
 };
