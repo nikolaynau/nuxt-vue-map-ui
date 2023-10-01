@@ -21,7 +21,7 @@ export function resolveExtensions(config: ModuleOptions, resolver: Resolver) {
       src: resolver.resolve(
         runtimeDir,
         'plugins',
-        'locateControlExtension.client.ts'
+        'locateControlExtension.client'
       )
     });
   }
