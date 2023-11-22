@@ -1,4 +1,12 @@
-<script setup lang="ts"></script>
+<script setup lang="ts">
+if (process.client) {
+  await Promise.all([
+    // @ts-ignore
+    import('@leaflet-extensions/locatecontrol'),
+    import('@leaflet-extensions/locatecontrol/dist/leaflet-locatecontrol.css')
+  ]);
+}
+</script>
 
 <template>
   <section class="section">
